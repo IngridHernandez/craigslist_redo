@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Craigslist</title>
+    <title>CraigsList</title>
+    <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="Style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/cfbe0d3908.js" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
- <!--Navigation-->
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white border border-top-0 border-start-0 border-end-0 border-danger border-4">
       <div class="container-fluid">
@@ -47,6 +49,27 @@
             <!--li class="nav-item me-2">
               <a href="#" class="btn btn-danger transparent-btn  text-dark px-5">POST</a>
             </li-->
+            <li class="d-block d-lg-none nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="d-block d-lg-none nav-item">
+              <a class="nav-link" href="#">Community</a>
+            </li>
+            <li class="d-block d-lg-none nav-item">
+              <a class="nav-link" href="#">For Sale</a>
+            </li>
+            <li class="d-block d-lg-none nav-item">
+              <a class="nav-link" href="#">Gigs</a>
+            </li>
+            <li class="d-block d-lg-none nav-item">
+              <a class="nav-link" href="housing.html">Housing</a>
+            </li>
+            <li class="d-block d-lg-none nav-item">
+              <a class="nav-link" href="#">Jobs</a>
+            </li>
+            <li class="d-block d-lg-none nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Account</a>
             </li>
@@ -70,100 +93,121 @@
         </button>
       </div>
     </div>
+    <!-- Mobile POST button-->
+    <!--div class="container-fluid d-block d-lg-none mt-2 px-3 text-end">
+      <a href="#" class="btn btn-danger transparent-btn  text-dark px-5">POST</a>
+    </div-->
           
-<!--Main Page-->
-     <main id="homePage">
-      <!--Section 1-->
-      <nav>
-        <ul class="breadcrumbs">
-         <li><a href="index.html">Home</a></li>
-         <li><a href="#">Community</a></li>
-         <li><a href="#">For sale</a></li>
-         <li><a href="#">Gigs</a></li>
-         <li><a href="#" class="page" aria-current="true">Housing page</a></li>
-         <li><a href="#">Jobs</a></li>
-         <li><a href="#">Services</a></li>
-         <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
+    
+    <!-- Breadcrumbs -->
+    <nav class="nav-breadcrumbs">
+      <ul class="d-none d-lg-flex list-unstyled w-100 pt-3 pb-2 gap-2  breadcrumbs mx-4">
 
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Community</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">For sale</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Gigs</a>
+        </li>
+        <li class="nav-item">
+          <a href="housing.html" class="nav-link">Housing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Services</a>
+        </li>
+        
+      </ul>
+
+    </nav>
+
+ 
+    <!--Main Page-->
+     <main id="homePage">
+       <div><h1 class="fs-1 text">Housing page</h1></div>
       <section class="list-container">
         <ul class="list-group">
-          <li class="list-group-item"><a href="swap.html">housing swap</a></li>
-          <li class="list-group-item"><a href="#">parking & storage</a></li>
-          <li class="list-group-item"><a href="#">rooms & shares</a></li>
-          <li class="list-group-item"><a href="#">vacation rentals</a></li>
-          <li class="list-group-item"><a href="#">sublets & temporary</a></li>
+          <li class="list-group-item"><a href="swap.html" class="nav-link">housing swap</a></li>
+          <li class="list-group-item"><a href="#" class="nav-link">parking & storage</a></li>
+          <li class="list-group-item"><a href="#" class="nav-link">rooms & shares</a></li>
+          <li class="list-group-item"><a href="#" class="nav-link">vacation rentals</a></li>
+          <li class="list-group-item"><a href="#" class="nav-link">sublets & temporary</a></li>
         </ul>
       </section>
 
-<section class="container my-5">
-  <div class="row justify-content-center gap-4">
-    
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card card-housing" style="width: 300px;">
-        <img src="Images/house.jpg" class="card-img-top" alt="House exterior">
-        <div class="card-body">
-          <h5 class="card-title">New homes daily.</h5>
-          <p class="card-text">Rented or owned, small or large...</p>
-          <button class="btn btn-danger bg-white mt-3 text-dark">Buy locally</button>
-        </div>
-      </div>
+      <section class="list-container">
+          <div class="d-flex my-5 justify-content-center flex-wrap gap-3">
+              
+              <div class="d-flex justify-content-center">
+                <div class="card card-housing" style="max-width: 350px;">
+                    <img src="Images/house.jpg" class="card-img-top" alt="House exterior">
+                    <div class="card-body">
+                    <h5 class="card-title">New homes daily.</h5>
+                    <p class="card-text">Find your perfect home.</p>
+                    <button class="btn btn-danger background-white mt-3 text-dark">Buy locally</button>
+                    </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <div class="card card-housing" style="max-width: 350px;">
+                    <img src="Images/house1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Find your perfect rental.</h5>
+                    <p class="card-text">Rent your new home today.</p>
+                    <button class="btn btn-danger background-white mt-3 text-dark">Rent locally</button>
+                    </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <div class="card card-housing" style="max-width: 350px;">
+                    <img src="Images/house4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">List your home for potential buyers.</h5>
+                    <p class="card-text">sele your home to potential buyers.</p>
+                    <button class="btn btn-danger background-white mt-3 text-dark">Sell locally</button>
+                    </div>
+                </div>
+              </div>
+              
+
+          </div>
+      </section>
+
+        <section class="list-container p-3">
+  <div class="row">
+    <h2 class="col-12">Featured Story</h2>
+
+    <!-- Image column -->
+    <div class="col-md-4 mb-3">
+      <img src="images/house3.jpg" alt="Featured home" class="img-fluid img-thumbnail rounded w-100">
     </div>
 
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card card-housing" style="width: 300px;">
-        <img src="Images/house1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Find your perfect rental.</h5>
-          <p class="card-text">No nightly fees. Just pay for cleaning + a small service fee per trip. New members can book up to 5 nights before they host.</p>
-          <button class="btn btn-danger background-white mt-3 text-dark">Rent locally</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card card-housing" style="width: 300px;">
-        <img src="Images/house2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">List your home for potential buyers.</h5>
-          <p class="card-text">Earn credits each time you host. You’ll meet and approve who stays in your home and Kindred will take care of the rest.</p>
-          <button class="btn btn-danger background-white mt-3 text-dark">Sell locally</button>
-        </div>
-      </div>
-    </div>
-    
-      <div class="col-md-4 d-flex justify-content-center">
-      <div class="card card-housing" style="width: 300px;">
-        <img src="Images/house2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">List your home for potential buyers.</h5>
-          <p class="card-text">Earn credits each time you host. You’ll meet and approve who stays in your home and Kindred will take care of the rest.</p>
-          <button class="btn btn-danger background-white mt-3 text-dark">Sell locally</button>
-        </div>
-      </div>
+    <!-- Text column -->
+    <div class="col-md-8">
+      <p class="gallery mainStory px-md-3">
+       The passage of time is also recorded while sketching the plan of the little house. Enric and Benedetta gave their small daughter a miniature chair and she started to play with it, taking her first steps with it and moving it. Like if trying to draw these movements on the floor, the parents generated the plan of the house. From its limits a timber framework was brought to life which forms the volumes which embraces, exactly like a dress, the movement of the girl with her chair and the adults sitting around the table.
+              At this point in the design process, the architects brought an old drawing by the architect Le Corbusier where a girl asks an adult to play with her, inviting him to enter a house through a small door to the world at her size. The house in Kolonihaven varies in height. It has a very low ceiling in the children's room but becomes higher by the sitting room for adults. Seen through its section, the house captures this passage of time - the house grows with the inhabitant, from being a child to become an adult.
+        <span>Read More...</span>
+      </p>
     </div>
 
   </div>
 </section>
-
-     
-    
-    
-      <section class="homePage events  left-section container text-left col-12 col-sm-6 col-md-3">
-      
-          <div class="gallery mainStory">
-              <h2>Featured Story</h2>
-              <img src="Images/Image (1).jpg" alt="">
-              <p class="gallery mainStory">The passage of time is also recorded while sketching the plan of the little house. Enric and Benedetta gave their small daughter a miniature chair and she started to play with it, taking her first steps with it and moving it. Like if trying to draw these movements on the floor, the parents generated the plan of the house. From its limits a timber framework was brought to life which forms the volumes which embraces, exactly like a dress, the movement of the girl with her chair and the adults sitting around the table.
-                At this point in the design process, the architects brought an old drawing by the architect Le Corbusier where a girl asks an adult to play with her, inviting him to enter a house through a small door to the world at her size. The house in Kolonihaven varies in height. It has a very low ceiling in the children's room but becomes higher by the sitting room for adults. Seen through its section, the house captures this passage of time - the house grows with the inhabitant, from being a child to become an adult. <span>Read More...</span></p>
-            </div>
-     
-      </section>
   
-</main>
+     </main>
+ 
 
- <footer class="bg-dark text-white py-5">
+    <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row gy-4 text-center text-md-start">
 
@@ -213,17 +257,17 @@
               <li><a href="#" class="footer-link">find/post jobs</a></li>
             </ul>
             <button class="btn btn-danger background-white mt-3 text-dark">Subscribe</button>
-           <div class="display-4 fw-bold mt-3 footer-link">CL</div>
+            <h1 class="display-4 fw-bold mt-3 footer-link" >CL</h1>
           </div>
 
         </div>
       </div>
     </footer>
     <!-- Mobile POST button-->
-<div class="d-block d-lg-none px-3">
-  <a href="#" id="mobile-post-btn" class="btn btn-danger w-100">POST</a>
-</div>
-   
+
+    <div class="d-block d-lg-none px-3">
+        <a href="#" id ="mobile-post-btn"  class="btn btn-danger transparent-btn  text-dark px-5">POST</a>
+    </div>
           
     <!-- Off-Canvas Form -->
    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
